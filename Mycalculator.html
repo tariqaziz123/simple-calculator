@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="Mycalculator.js"></script>
+        <link href="Mycalculator.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-fluid" >
+                <form name="calculator">
+                    <div class="display">
+                        <input type="text" placeholder="0" name="display" readonly="" id="output">
+                    </div>
+                    <div>
+                        <button class="input" type="button" name="clear" onClick="clearText(display.value)">C</button>
+                        <button class="input" type="button" name="divide" value="/" onClick="calc(divide.value)">/</button>
+                        <button class="input" type="button" name="mult" value="*" onClick="calc(mult.value)">X</button>
+                        <button class="input" type="button" name="bck" onClick="bckspc(display.value)">⌫</button>
+                    </div>
+                    <div>
+                        <button class="input" type="button" name="btn07" value="7" onClick="calc(btn07.value)">7</button>
+                        <button class="input" type="button" name="btn08" value="8" onClick="calc(btn08.value)">8</button>
+                        <button class="input" type="button" name="btn09" value="9" onClick="calc(btn09.value)">9</button>
+                        <button class="input" type="button" name="minus" value="-" onClick="calc(minus.value)">-</button>
+                    </div>
+                    <div>
+                        <button class="input" type="button" name="btn04" value="4" onClick="calc(btn04.value)">4</button>
+                        <button class="input" type="button" name="btn05" value="5" onClick="calc(btn05.value)">5</button>
+                        <button class="input" type="button" name="btn06" value="6" onClick="calc(btn06.value)">6</button>
+                        <button class="input" type="button" name="add" value="+" onClick="calc(add.value)">+</button>
+                    </div>
+                    <div>
+                        <button class="input" type="button" name="btn01" value="1" onClick="calc(btn01.value)">1</button>
+                        <button class="input" type="button" name="btn02" value="2" onClick="calc(btn02.value)">2</button>
+                        <button class="input" type="button" name="btn03" value="3" onClick="calc(btn03.value)">3</button>
+                        <button class="input" type="button" name="dec" value="." onClick="calc(dec.value)">.</button>
+                    </div>
+                    <div>
+                        <button class="input" type="button" name="opnparnths" value="(" onClick="calc(opnparnths.value)">(</button>
+                        <button class="input" type="button" name="clsparnths" value=")" onClick="calc(clsparnths.value)">)</button>
+                        <button class="input" type="button" name="btn0" value="0" onClick="calc(btn0.value)">0</button>
+                        <button class="input" type="button" name="equal" value="=" onClick="display.value=eval(display.value)">=</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
